@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        box-shadow: rgba(37,39,89,0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+        border-radius: 10px;
+        width: 50%;
+        padding: 30px;
+        margin: 30px auto;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        color: #fff;
+
+    }
+
+    h2 {
+        text-align: center;
+        color: #fff;
+        padding: 10px;
+
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+        height: 200px;
+        border-radius: 4px;
+
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    a {
+        color: #fff;
+        font-size: smaller;
+
+    }
+
+    button {
+        display: block;
+        margin: 30px auto;
+        font-size: 42px;
+        background: black;
+        color: #fff;
+        border-radius: 4px;
+        padding: 10px 20px;
+        border: none;
+        text-transform: uppercase;
+        transition: opacity 150ms ease;
+        box-shadow: 0 1px 20px rgba(0,0,0,0.5);
+        cursor: pointer;
+        opacity: 1;
+    }
+
+    button:hover {
+       background: rgba(0,0,0,0.77);
+    }
+
+
+
+</style>
+<body>
+
+<div>
+    <h1>I love Yogurt</h1>
+    <h2>Creamy Homemade Yogurt</h2>
+    <hr>
+    <img src="https://static01.nyt.com/images/2018/07/18/dining/18YOGURT1/18YOGURT1-superJumbo.jpg" alt="">
+    <hr>
+    <p>Homemade yogurt is a snap to make. All you really need is good quality milk, a few spoonfuls of your favorite plain
+    yogurt to use as a starter culture, and some time to let it sit. You can substitute low-fat milk here if you’d rather; 2
+    percent works a lot better than 1 percent. Skim milk will give you a thinner yogurt, though if you add some dry milk
+    powder to the milk as it heats (about ½ cup), that will help thicken it. Creamline (non-homogenized milk) will give you
+    a cream top on your yogurt. Homogenized milk is smooth throughout.</p>
+    
+    <span>
+        <a href="https://en.wikipedia.org/wiki/Strained_yogurt" target="_band">Read on Wikipedia</a>
+    </span>
+    <br>
+    <button>TRY GREEK YOGURT</button>
+</div>
+    
+    <script>
+        let homeYogurt = document.querySelector('button');
+        function yougurt () {
+            let name = prompt('What is your name?');
+            alert('Thanks, ' + name + ', we will be in touch. Meanwhile, have a lot of Yogurt!');
+        }
+        homeYogurt.addEventListener("click", yougurt);
+    </script>
+</body>
+</html>
